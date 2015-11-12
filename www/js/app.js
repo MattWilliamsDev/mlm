@@ -23,6 +23,8 @@ angular.module( 'app', [
 			// org.apache.cordova.statusbar required
 			StatusBar.styleDefault();
 		}
+
+		moment.locale( 'en' );
 	});
 })
 
@@ -100,5 +102,5 @@ angular.module( 'app', [
 		});
 		
 	// if none of the above states are matched, use this as the fallback
-	$urlRouterProvider.otherwise( '/' );
+	$urlRouterProvider.otherwise( '/app' );
 });

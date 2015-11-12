@@ -7700,37 +7700,9 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.videogular-container {
-  width: 100%;
-  height: 320px;
-  margin: auto;
-  overflow: hidden; }
-
-@media (min-width: 1200px) {
-  .videogular-container {
-    width: 1170px;
-    height: 658.125px; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .videogular-container {
-    width: 940px;
-    height: 528.75px; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .videogular-container {
-    width: 728px;
-    height: 409.5px; } }
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 0;
-  height: 0;
-  overflow: hidden; }
-
-.video-container iframe, .video-container object, .video-container embed, .video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+/* Contacts */
+h2.contact-name {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 10px 0;
+  padding: 0; }

@@ -12,6 +12,7 @@ angular.module( 'app.controllers' )
 						}
 					});
 					$scope.announcements = data.value;
+					console.log( 'announcements', $scope.announcements );
 				}, function errorCallback( err ) {
 					console.error( 'Error getting announcements:', err );
 				});

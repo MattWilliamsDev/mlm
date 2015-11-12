@@ -1,1 +1,1 @@
-angular.module( 'app.servies', [] );
+angular.module( 'app.services', [] );
