@@ -1,0 +1,15 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.0"
+  },
+  "dependencies": {
+    "videogular-buffering": "~1.2.8",
+    "videogular-controls": "~1.2.8",
+    "videogular-overlay-play": "~1.2.8",
+    "angular-sanitize": "~1.4.7",
+    "underscore": "~1.8.3",
+    "moment": "momentjs#~2.10.6"
+  }
+}

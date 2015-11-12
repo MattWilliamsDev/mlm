@@ -1,0 +1,35 @@
+<ion-view view-title="Contacts">
+	<ion-content>
+
+	    <ion-list can-swipe="listCanSwipe">
+			
+			<div class="list list-card">
+				
+				<div ng-repeat="( group, groupedContacts ) in contacts">
+					<ion-item class="item item-divider">
+						{{ group }}
+					</ion-item>
+
+					<ion-item ng-repeat="contact in groupedContacts" class="item contact" ng-click="toggleContactDetails( contact )">
+							<!-- <div class="item item-text-wrap"> -->
+						<h2 class="contact-name">{{ contact.Firstname }} {{ contact.Lastname }}</h2>
+							<!-- </div> -->
+						<div class="list list-inset animate-hide" ng-show="contact.expanded">
+							<div class="item item-icon-left">
+								<i class="icon ion-android-contacts"></i>
+								<strong>Mobile #:</strong> {{ contact.MobilePhone }}
+							</div>
+							<div class="item item-icon-left">
+								<i class="icon ion-email"></i>
+								<strong>Email:</strong> <a href="mailto:{{ contact.Email }}">{{ contact.Email }}</a>
+							</div>
+						</div>
+					</ion-item>
+		    	</div>
+
+			</div>
+
+		</ion-list>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view view-title="News &amp; Announcements">
+	<ion-content>
+	    <ion-list>
+			
+			<div class="list list-card">
+				
+				<div ng-repeat="item in announcements">
+					
+					<div class="item item-avatar">
+						<h2>{{ item.Title }}</h2>
+						<p>By {{ item.CreatedBy }} on {{ formateDate( item.CreatedOn ) }}</p>
+					</div>
+
+					<div class="item item-body">
+						{{ item.Description }}
+					</div>
+
+					<div class="item item-icon-left" ng-show="item.hasLink">
+						<i class="icon ion-link"></i>
+						Read More:
+						<a href="{{ item.link }}" target="_blank">
+							{{ item.link }}
+						</a>
+					</div>
+
+		    	</div>
+
+			</div>
+
+		</ion-list>
+	</ion-content>
+</ion-view>
