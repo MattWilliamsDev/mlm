@@ -1,4 +1,52 @@
 <ion-view view-title="Orders">
 	<ion-content>
+	
+		<ion-list>
+			<div class="list card" ng-repeat="order in orders">
+
+				<div class="item item-body">
+
+					<div class="row">
+						<div class="col col-60">
+							<small>{{ order.PurchaseDate }}</small>
+						</div>
+
+						<div class="col col-offset-60">
+							<small>{{ order.Status }}</small>
+						</div>
+					</div>
+
+					<div class="row bold-row">
+						<div class="col col-60">
+							<strong>{{ order.Purchaser }}</strong>
+						</div>
+
+						<div class="col col-offset-60">
+							<strong>${{ order.Amount }}</strong>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-60">
+							<small>Placed via: {{ order.OrderedVia }}</small>
+						</div>
+						<div class="col col-offset-60">
+							<small>{{ order.OrderType }}</small>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- <div class="item item-icon-left" ng-show="item.hasLink">
+					<i class="icon ion-link"></i>
+					Read More:
+					<a href="{{ item.link }}" target="_blank">
+						{{ item.link }}
+					</a>
+				</div> -->
+
+			</div>
+		</ion-list>
+
 	</ion-content>
 </ion-view>

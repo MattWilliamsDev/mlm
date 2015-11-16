@@ -28,3 +28,16 @@ h2.contact-name {
 	margin: 10px 0;
 	padding: 0
 }
+
+// .bar.bar-header {
+ion-header-bar.bar-stable.bar.bar-header {
+	background-color: $calm;
+
+	.title {
+		color: $light;
+	}
+}
+
+.row.bold-row {
+	font-size: 1.5em;
+}
